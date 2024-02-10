@@ -11,14 +11,14 @@
 
   
 
-  <title>About me | プログラミングしたい人集まれ</title>
+  <title>ScratchLikeJSの紹介 | プログラミングしたい人集まれ</title>
 
   
   
-  <meta name="author" content="Amami Thidamall">
+  <meta name="author" content="Amami-Harhid">
   
 
-  <meta name="description" content="自己紹介">
+  <meta name="description" content="軽い紹介程度">
 
   
 
@@ -79,30 +79,34 @@
 
   
   <meta property="og:site_name" content="プログラミングしたい人集まれ">
-  <meta property="og:title" content="About me | プログラミングしたい人集まれ">
-  <meta property="og:description" content="自己紹介">
+  <meta property="og:title" content="ScratchLikeJSの紹介 | プログラミングしたい人集まれ">
+  <meta property="og:description" content="軽い紹介程度">
 
   
-  <meta property="og:image" content="http://localhost:4000/assets/img/avatar-icon.svg">
-  
-
-  
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:4000/aboutme/">
-  <link rel="canonical" href="http://localhost:4000/aboutme/">
+  <meta property="og:image" content="http://localhost:4000/assets/img/path.jpg">
   
 
   
-  <meta name="twitter:card" content="summary">
+  <meta property="og:type" content="article">
+  
+  <meta property="og:article:author" content="Amami-Harhid">
+  
+  <meta property="og:article:published_time" content="2024-02-10T00:00:00+09:00">
+  <meta property="og:url" content="http://localhost:4000/2024-02-10-scratch3-like-js-sample/">
+  <link rel="canonical" href="http://localhost:4000/2024-02-10-scratch3-like-js-sample/">
+  
+
+  
+  <meta name="twitter:card" content="summary_large_image">
   
   <meta name="twitter:site" content="@">
   <meta name="twitter:creator" content="@">
 
-  <meta property="twitter:title" content="About me | プログラミングしたい人集まれ">
-  <meta property="twitter:description" content="自己紹介">
+  <meta property="twitter:title" content="ScratchLikeJSの紹介 | プログラミングしたい人集まれ">
+  <meta property="twitter:description" content="軽い紹介程度">
 
   
-  <meta name="twitter:image" content="http://localhost:4000/assets/img/avatar-icon.svg">
+  <meta name="twitter:image" content="http://localhost:4000/assets/img/path.jpg">
   
 
   
@@ -243,29 +247,46 @@
   
 
 
+  <div id="header-big-imgs" data-num-img=1
+    
+    
+    
+    
+      data-img-src-1="http://localhost:4000/assets/img/path.jpg"
+    
+    
+    
+  ></div>
 
-<header class="header-section ">
-<div class="intro-header ">
+
+<header class="header-section has-img">
+<div class="intro-header  big-img ">
   
   <div class="container-md">
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-        <div class="page-heading">
-          <h1>About me</h1>
+        <div class="post-heading">
+          <h1>ScratchLikeJSの紹介</h1>
           
             
-              <hr class="small">
-              <span class="page-subheading">自己紹介</span>
+              <h2 class="post-subheading">軽い紹介程度</h2>
             
           
           
+           
+            
+              By <strong>Amami-Harhid</strong><br>
+            
+            <span class="post-meta">Posted on February 10, 2024</span>
+            
+            
           
         </div>
       </div>
     </div>
   </div>
   
-  
+  <span class='img-desc'></span>
 </div>
 
 
@@ -276,21 +297,158 @@
 <main class=" container-md ">
   <div class="row">
     <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
-      
-
-      <p>こんにちは。奄美ティダモール校、原永(Haranaga)です。</p>
-
-<ul>
-  <li>プログラミングが大好き人間です</li>
-  <li>奄美でプログラミング教室をやってます</li>
-  <li>プログラミングにかかわることが大好きでわくわくしながら過ごしています。</li>
-  <li></li>
-</ul>
-
 
       
 
       
+
+      <div class="blog-post">
+        <h1 id="scratch3風のjavascript">Scratch3風のJavascript</h1>
+
+<h2 id="scratch3likejs">Scratch3LikeJS</h2>
+
+<p>Scratch3LikeJSを使うと、こんな感じで、Scratch3 のブロックに対応した Javascriptコードを書くことができます。</p>
+
+<p><img src="../assets/img/scratchblocks001.svg" alt="Block" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>P.sprite.whenFlag( function() {
+    for(;;) {
+        // (10)歩動かす
+        this.moveSteps( 10 );
+        // もし端に着いたら、跳ね返る
+        this.ifOnEdgeBounds();
+    }
+});
+</code></pre></div></div>
+
+<h3 id="p-って何">P って何？</h3>
+
+<p>Scratch3LikeJS の Process のインスタンスです。
+P を使って ScratchLikeJS のいろいろな便利なメソッドを使うことができます。</p>
+
+<h3 id="scratch3likejs-javascriptの書き方">Scratch3LikeJS Javascriptの書き方</h3>
+
+<h4 id="preload処理">preload処理</h4>
+
+<p>画像や音をロードするところです。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>P.preload = function() {
+
+    // 画像をロードします
+    this.loadImage( 画像ファイルのパス , '名前');
+    // サウンドをロードします
+    this.loadSound( 音ファイルのパス , '名前' ); 
+}
+</code></pre></div></div>
+
+<p>preloadの中に書いた全ての loadImage, loadSound のロード処理が終われば、次の prepare処理に進みます。</p>
+
+<p>ロードするものがないときは、preload処理を省略（記述しない）してもオーケーです。</p>
+
+<h4 id="prepare処理">prepare処理</h4>
+
+<p>ステージ(Stage)やスプライト(Sprite)を作るところです。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>P.prepare = function() {
+    // ステージのインスタンスを作ります
+    P.stage = new P.Stage("stage");
+    // ステージへ背景を追加します
+    P.stage.addImage( P.images.Jurassic );
+    // スプライトを作ります。Cat という名前を付けて、P.cat 変数へ格納します。
+    P.cat = new P.Sprite("Cat");
+    // スプライトへコスチュームを追加します
+    P.cat.addImage( P.images.Cat );
+}
+</code></pre></div></div>
+
+<h4 id="setting処理">setting処理</h4>
+
+<p>「旗をクリックしたとき」や「クリックされたとき」のようなイベントとそれにともなうスクリプトを定義します。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>P.setting = function() {
+
+    // 「ステージ」旗がクリックされたときのイベント
+    P.stage.whenFlag(async function() {
+        // ステージへ音を登録します。
+        // ボリューム( 50 )を一緒に設定しています。
+        this.addSound( P.sounds.Chill, { 'volume' : 50 } );
+    });
+
+    // 「ステージ」旗がクリックされたときのイベント
+    P.stage.whenFlag(async function() {
+        // ずっと繰り返して、「音」を鳴らします。
+        // 音は 終わるまで鳴らします(Until Done)
+        for(;;) {
+            await this.startSoundUntilDone();
+        }
+    });
+    // 「ネコスプライト」旗がクリックされたときのイベント
+    P.cat.whenFlag( async function() {
+        // 「ネコスプライト」へ音を登録します
+        // ボリューム( 20 )を一緒に設定しています。
+        this.addSound( P.sounds.Mya, { 'volume' : 20 } );
+    });
+    // 「ネコスプライト」旗がクリックされたときのイベント
+    P.cat.whenFlag( async function() {
+        // 向きの変化量
+        const direction = 1;
+        // ずっと向きを変え続けます。
+        for(;;) {
+            // 決めた量を足し続けます。
+            this.direction += direction;
+        }
+    });
+}
+</code></pre></div></div>
+
+      </div>
+
+      
+        <div class="blog-tags">
+          <span>Tags:</span>
+          
+            <a href="/tags#javascript">javascript</a>
+          
+            <a href="/tags#Scratch3">Scratch3</a>
+          
+        </div>
+      
+
+      
+
+      
+        <!-- Check if any share-links are active -->
+
+
+
+
+
+      
+
+      <ul class="pagination blog-pager">
+        
+        <li class="page-item previous">
+          <a class="page-link" href="/2020-02-28-sample-markdown/" data-toggle="tooltip" data-placement="top" title="Sample blog post to learn markdown tips">
+            <i class="fas fa-arrow-left" alt="Previous Post"></i>
+            <span class="d-none d-sm-inline-block">Previous Post</span>
+          </a>
+        </li>
+        
+        
+      </ul>
+      
+  
+  
+  
+
+  
+
+
+  
+
+  
+
+
 
     </div>
   </div>
