@@ -9,13 +9,8 @@
 # --- Required options --- #
 ############################
 
-#paginate: 5
-
 # Name of website
 title: プログラミングしたい人集まれ
-#subtitle: Amami Thidamall
-#description: >
-#Scratch3, Javascript, Python, Unity, etc
 
 # Your name to show in the footer
 author: Amami Thidamall
@@ -138,8 +133,8 @@ navbar-var-length: false
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#EAEAEA"
-navbar-text-col: "#404040"
+navbar-col: "#65CB00"
+navbar-text-col: "#FFFFFF"
 navbar-border-col: "#DDDDDD"
 page-col: "#FFFFFF"
 text-col: "#404040"
