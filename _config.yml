@@ -21,10 +21,11 @@ author: Amami Thidamall
 
 navbar-links:
   About Me: "aboutme"
+  レクチャー:
+    - 住用中: "./lecture/lecture-on-future"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+#
+#  Author's home: "https://deanattali.com"
 
 ################
 # --- Logo --- #
@@ -125,7 +126,7 @@ edit_page_button: true
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+keywords: "Programming,Amami,Scratch3,Javascript"
 
 ######################################
 # --- Colours / background image --- #
@@ -232,8 +233,8 @@ footer-hover-col: "#0085A1"
 # (3) Fill in *all* the parameters below 
 # See more details about giscus and each of the following parameters at https://giscus.app
 #giscus:
-#  hostname: giscus.app # Replace with your giscus instance's hostname if self-hosting
-#  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
+# hostname: amami-harhid.github.io # Replace with your giscus instance's hostname if self-hosting
+# repository: amami-harhid/amamiThidamallBlog   # GitHub username/repository eg. "daattali/beautiful-jekyll"
 #  repository-id: # ID of your repository, retrieve this info from https://giscus.app
 #  category: Announcements # Category name of your GitHub Discussion posts
 #  category-id: # ID of your category, retrieve this info from https://giscus.app
@@ -283,6 +284,8 @@ defaults:
       layout: "page"
 
 # Exclude these files from production site
+include:
+  - lecture/lecture-on-future.md
 exclude:
   - CHANGELOG.md
   - CNAME
