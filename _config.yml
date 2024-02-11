@@ -5,6 +5,8 @@
 ### the initial set up you won't need to come back to this file often.
 ###########################################################
 
+
+
 ############################
 # --- Required options --- #
 ############################
@@ -89,6 +91,9 @@ rss-description: This website is a virtual proof that I'm awesome
 ###########################
 # --- General options --- #
 ###########################
+
+# base url
+baseurl: "/amamiThidamallBlog"
 
 # Select which social network share links to show in posts
 
