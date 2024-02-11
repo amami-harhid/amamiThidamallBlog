@@ -17,16 +17,16 @@ author: Amami-Harhid
 
 Sample22 で説明します
 
-![alt text](../assets/img/sample22/imageSample22.png)
+![alt text](/assets/img/sample22/imageSample22.png)
 
 ##### >解説 をクリック
-![alt text](../assets/img/sample22/sample22クリック.gif)
+![alt text](/assets/img/sample22/sample22クリック.gif)
 
 ##### 旗をクリック
-![alt text](../assets/img/sample22/sample22緑の旗.gif)
+![alt text](/assets/img/sample22/sample22緑の旗.gif)
 
 #### JSFidele をクリック
-![alt text](../assets/img/sample22/sample22_jsfiddle.gif)
+![alt text](/assets/img/sample22/sample22_jsfiddle.gif)
 
 
 
