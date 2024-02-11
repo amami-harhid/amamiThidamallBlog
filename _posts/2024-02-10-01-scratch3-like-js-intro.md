@@ -15,7 +15,7 @@ author: Amami-Harhid
 
 Scratch3LikeJSを使うと、こんな感じで、Scratch3 のブロックに対応した Javascriptコードを書くことができます。
 
-![Block](assets/img/scratchblocks001.svg)
+![Block](../assets/img/scratchblocks001.svg)
 
 ~~~
 P.sprite.whenFlag( function() {
