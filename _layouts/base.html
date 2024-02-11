@@ -23,7 +23,7 @@ common-js:
 <html lang="{{ page.language | default: site.language | default: 'ja' }}">
 <!-- Beautiful Jekyll 6.0.1 | Copyright Dean Attali 2023 -->
 {% if site.baseurl %}
-  <base href="{% if site.url-canonical %}{{ site.url-canonical }}{% else %}{{ '/' | absolute_url }}{% endif %}">{{ site.baseurl }}</a>
+  <base href="{% if site.url-canonical %}{{ site.url-canonical }}{% else %}{{ '/' | absolute_url }}{% endif %}"/>
 {% endif %}
 {% include head.html %}
 
