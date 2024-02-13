@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <!-- Beautiful Jekyll 6.0.1 | Copyright Dean Attali 2023 -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  
   
 
   
@@ -23,9 +23,11 @@
   
 
   
+  <meta name="keywords" content="Programming,Amami,Scratch3,Javascript">
+  
 
   
-  <link rel="alternate" type="application/rss+xml" title="プログラミングしたい人集まれ" href="http://localhost:4000/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="プログラミングしたい人集まれ" href="http://localhost:4000/amamiThidamallBlog/feed.xml">
   
 
   
@@ -63,9 +65,9 @@
 
   
     
-      <link rel="stylesheet" href="/assets/css/bootstrap-social.css">
+      <link rel="stylesheet" href="/amamiThidamallBlog/assets/css/bootstrap-social.css">
     
-      <link rel="stylesheet" href="/assets/css/beautifuljekyll.css">
+      <link rel="stylesheet" href="/amamiThidamallBlog/assets/css/beautifuljekyll.css">
     
   
 
@@ -83,13 +85,13 @@
   <meta property="og:description" content="{% assign date_format = site.date_format | default: &quot;%B %-d, %Y&quot; %} {%- capture site_tags -%} {%- for tag in site.tags -%} {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%} {%- endfor -%} {%- endcapture -%} {%- assign tags_list = site_tags | split:&apos;,&apos; | sort -%} {%- for tag...">
 
   
-  <meta property="og:image" content="http://localhost:4000/assets/img/avatar-icon.svg">
+  <meta property="og:image" content="http://localhost:4000/amamiThidamallBlog/assets/img/avatar-icon.svg">
   
 
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:4000/tags/">
-  <link rel="canonical" href="http://localhost:4000/tags/">
+  <meta property="og:url" content="http://localhost:4000/amamiThidamallBlog/tags/">
+  <link rel="canonical" href="http://localhost:4000/amamiThidamallBlog/tags/">
   
 
   
@@ -102,7 +104,7 @@
   <meta property="twitter:description" content="{% assign date_format = site.date_format | default: &quot;%B %-d, %Y&quot; %} {%- capture site_tags -%} {%- for tag in site.tags -%} {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%} {%- endfor -%} {%- endcapture -%} {%- assign tags_list = site_tags | split:&apos;,&apos; | sort -%} {%- for tag...">
 
   
-  <meta name="twitter:image" content="http://localhost:4000/assets/img/avatar-icon.svg">
+  <meta name="twitter:image" content="http://localhost:4000/amamiThidamallBlog/assets/img/avatar-icon.svg">
   
 
   
@@ -122,25 +124,24 @@
   
 
 
-  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="http://localhost:4000/">プログラミングしたい人集まれ</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="http://localhost:4000/amamiThidamallBlog/">プログラミングしたい人集まれ</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="main-navbar">
     <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/aboutme">About Me</a>
+            <a class="nav-link" href="/amamiThidamallBlog/aboutme">About Me</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">レクチャー</a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="https://beautifuljekyll.com">Beautiful Jekyll</a>
-                  <a class="dropdown-item" href="https://www.markdowntutorial.com/">Learn markdown</a>
+                  <a class="dropdown-item" href="/amamiThidamallBlog/lecture/lecture-on-future">住用中</a>
             </div>
           </li>
         
           <li class="nav-item">
-            <a class="nav-link" href="https://deanattali.com">Author's home</a>
+            <a class="nav-link" href="">Resources</a>
           </li>
         <li class="nav-item">
           <a class="nav-link" id="nav-search-link" href="#" title="Search">
@@ -155,8 +156,8 @@
   
     <div class="avatar-container">
       <div class="avatar-img-border">
-        <a href="http://localhost:4000/">
-          <img alt="Navigation bar avatar" class="avatar-img" src="/assets/img/avatar-icon.svg" />
+        <a href="http://localhost:4000/amamiThidamallBlog/">
+          <img alt="Navigation bar avatar" class="avatar-img" src="/amamiThidamallBlog/assets/img/avatar-icon.svg" />
         </a>
       </div>
     </div>
@@ -177,19 +178,19 @@
     var searchjson = '[ \
        \
         { \
-          "title"    : "Sample blog post to learn markdown tips", \
-          "desc"     : "Sample blog post to learn markdown tips", \
-          "category" : "test", \
-          "url"      : "/2020-02-28-sample-markdown/", \
-          "date"     : "February 28, 2020" \
+          "title"    : "ScratchLikeJSのサンプル集", \
+          "desc"     : "ScratchLikeJSのサンプル集", \
+          "category" : "javascriptScratch3", \
+          "url"      : "/amamiThidamallBlog/2024-02-10-02-scratch3-like-js-sample/", \
+          "date"     : "February 10, 2024" \
         }, \
        \
         { \
-          "title"    : "Flake it till you make it", \
-          "desc"     : "Flake it till you make it", \
-          "category" : "bookstest", \
-          "url"      : "/2020-02-26-flake-it-till-you-make-it/", \
-          "date"     : "February 26, 2020" \
+          "title"    : "ScratchLikeJSの紹介", \
+          "desc"     : "ScratchLikeJSの紹介", \
+          "category" : "javascriptScratch3", \
+          "url"      : "/amamiThidamallBlog/2024-02-10-01-scratch3-like-js-intro/", \
+          "date"     : "February 10, 2024" \
         }, \
        \
        \
@@ -197,7 +198,7 @@
           "title"    : "About me", \
           "desc"     : "About me", \
           "category" : "page", \
-          "url"      : "/aboutme/", \
+          "url"      : "/amamiThidamallBlog/aboutme/", \
           "date"     : "January 1, 1970" \
         }, \
        \
@@ -205,7 +206,15 @@
           "title"    : "WakuWaku Blog", \
           "desc"     : "WakuWaku Blog", \
           "category" : "page", \
-          "url"      : "/", \
+          "url"      : "/amamiThidamallBlog/", \
+          "date"     : "January 1, 1970" \
+        }, \
+       \
+        { \
+          "title"    : "ＩＴエンジニアはどんな仕事？", \
+          "desc"     : "ＩＴエンジニアはどんな仕事？", \
+          "category" : "page", \
+          "url"      : "/amamiThidamallBlog/lecture/lecture-on-future/", \
           "date"     : "January 1, 1970" \
         }, \
        \
@@ -213,7 +222,7 @@
           "title"    : "Tag Index", \
           "desc"     : "Tag Index", \
           "category" : "page", \
-          "url"      : "/tags/", \
+          "url"      : "/amamiThidamallBlog/tags/", \
           "date"     : "January 1, 1970" \
         } \
        \
@@ -265,28 +274,33 @@
     <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
       
 
-      <a href="#books" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;books&nbsp;(1)</a><a href="#test" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;test&nbsp;(2)</a><div id="full-tags-list"><h2 id="books" class="linked-section">
+      <a href="#Scratch3" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;Scratch3&nbsp;(2)</a><a href="#javascript" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;javascript&nbsp;(2)</a><div id="full-tags-list"><h2 id="Scratch3" class="linked-section">
         <i class="fas fa-tag" aria-hidden="true"></i>
-        &nbsp;books&nbsp;(1)
+        &nbsp;Scratch3&nbsp;(2)
     </h2>
     <div class="post-list"><div class="tag-entry">
-                <a href="/2020-02-26-flake-it-till-you-make-it/">Flake it till you make it</a>
+                <a href="/amamiThidamallBlog/2024-02-10-02-scratch3-like-js-sample/">ScratchLikeJSのサンプル集</a>
                 <div class="entry-date">
-                    <time datetime="2020-02-26T00:00:00+09:00">February 26, 2020</time>
-                </div>
-            </div></div><h2 id="test" class="linked-section">
-        <i class="fas fa-tag" aria-hidden="true"></i>
-        &nbsp;test&nbsp;(2)
-    </h2>
-    <div class="post-list"><div class="tag-entry">
-                <a href="/2020-02-28-sample-markdown/">Sample blog post to learn markdown tips</a>
-                <div class="entry-date">
-                    <time datetime="2020-02-28T00:00:00+09:00">February 28, 2020</time>
+                    <time datetime="2024-02-10T00:00:00+09:00">February 10, 2024</time>
                 </div>
             </div><div class="tag-entry">
-                <a href="/2020-02-26-flake-it-till-you-make-it/">Flake it till you make it</a>
+                <a href="/amamiThidamallBlog/2024-02-10-01-scratch3-like-js-intro/">ScratchLikeJSの紹介</a>
                 <div class="entry-date">
-                    <time datetime="2020-02-26T00:00:00+09:00">February 26, 2020</time>
+                    <time datetime="2024-02-10T00:00:00+09:00">February 10, 2024</time>
+                </div>
+            </div></div><h2 id="javascript" class="linked-section">
+        <i class="fas fa-tag" aria-hidden="true"></i>
+        &nbsp;javascript&nbsp;(2)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/amamiThidamallBlog/2024-02-10-02-scratch3-like-js-sample/">ScratchLikeJSのサンプル集</a>
+                <div class="entry-date">
+                    <time datetime="2024-02-10T00:00:00+09:00">February 10, 2024</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/amamiThidamallBlog/2024-02-10-01-scratch3-like-js-intro/">ScratchLikeJSの紹介</a>
+                <div class="entry-date">
+                    <time datetime="2024-02-10T00:00:00+09:00">February 10, 2024</time>
                 </div>
             </div></div></div>
 
@@ -314,7 +328,7 @@
       <span class="sr-only">Email me</span>
    </a>
   </li><li class="list-inline-item">
-    <a href="/feed.xml" title="RSS">
+    <a href="/amamiThidamallBlog/feed.xml" title="RSS">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
@@ -334,7 +348,7 @@
       
         &nbsp;&bull;&nbsp;
         <span class="author-site">
-          <a href="http://localhost:4000/">amami-harhid.github.io/amamiThidamallBlog/</a>
+          <a href="http://localhost:4000/amamiThidamallBlog/">amami-harhid.github.io/amamiThidamallBlog/</a>
         </span>
       
 
@@ -376,7 +390,7 @@
   
     <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
     
-      <script src="/assets/js/beautifuljekyll.js"></script>
+      <script src="/amamiThidamallBlog/assets/js/beautifuljekyll.js"></script>
     
   
 

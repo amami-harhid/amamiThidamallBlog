@@ -1,0 +1,6 @@
+■ PUSHする前
+bundle exec jekyll build --config _config.yml
+
+■ ローカルで確認するとき
+bundle exec jekyll build --config _config.yml,_config-dev.yml
+bundle exec jekyll serve
