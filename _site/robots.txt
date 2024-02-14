@@ -1,1 +1,1 @@
-Sitemap: http://localhost:4000/amamiThidamallBlog/sitemap.xml
+Sitemap: /amamiThidamallBlog/sitemap.xml
