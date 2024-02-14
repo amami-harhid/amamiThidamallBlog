@@ -5,7 +5,8 @@ subtitle: 軽い紹介程度
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-tags: [javascript, Scratch3]
+tags: 
+- [javascript, Scratch3]
 author: Amami-Harhid
 ---
 
@@ -13,7 +14,7 @@ author: Amami-Harhid
 
 ## Scratch3LikeJS
 
-Scratch3LikeJSを使うと、こんな感じで、Scratch3 のブロックに対応した Javascriptコードを書くことができます。
+Scratch3LikeJSを使うと、こんな感じで、Scratch3 のブロックに対応した Javascriptコードを書くことができます。 
 
 ![Block](../assets/img/scratchblocks001.svg)
 
@@ -113,3 +114,5 @@ P.setting = function() {
     });
 }
 ~~~
+
+<br>

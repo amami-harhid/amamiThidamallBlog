@@ -5,7 +5,8 @@ subtitle: サンプル集の見方
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-tags: [javascript, Scratch3]
+tags: 
+- [javascript, Scratch3]
 author: Amami-Harhid
 ---
 
@@ -28,5 +29,6 @@ Sample22 で説明します
 #### JSFidele をクリック
 ![alt text](../assets/img/sample22/sample22_jsfiddle.gif)
 
+<br>
 
 
